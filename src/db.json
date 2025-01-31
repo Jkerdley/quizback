@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Вопрос №1",
+        "answers": [
+            { "id": "1", "title": "Ответ№1: Текст ответа 1", "isTrueAnswer": "true" },
+            { "id": "2", "title": "Ответ№2: Текст ответа 2", "isTrueAnswer": "false" },
+            { "id": "3", "title": "Ответ№3: Текст ответа 3", "isTrueAnswer": "false" },
+            { "id": "4", "title": "Ответ№4: Текст ответа 4", "isTrueAnswer": "false" }
+        ]
+    },
+    {
+        "title": "Вопрос №2",
+        "answers": [
+            { "id": "1", "title": "Ответ№1: Текст ответа 1", "isTrueAnswer": "false" },
+            { "id": "2", "title": "Ответ№2: Текст ответа 2", "isTrueAnswer": "false" },
+            { "id": "3", "title": "Ответ№3: Текст ответа 3", "isTrueAnswer": "true" },
+            { "id": "4", "title": "Ответ№4: Текст ответа 4", "isTrueAnswer": "false" }
+        ]
+    },
+    {
+        "title": "Вопрос №3",
+        "answers": [
+            { "id": "1", "title": "Ответ№1: Текст ответа 1", "isTrueAnswer": "true" },
+            { "id": "2", "title": "Ответ№2: Текст ответа 2", "isTrueAnswer": "false" },
+            { "id": "3", "title": "Ответ№3: Текст ответа 3", "isTrueAnswer": "false" },
+            { "id": "4", "title": "Ответ№4: Текст ответа 4", "isTrueAnswer": "false" }
+        ]
+    }
+]
