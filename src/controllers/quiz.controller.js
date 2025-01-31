@@ -11,7 +11,7 @@ async function getQuestions() {
         const questions = await Quiz.find();
         return questions;
     } catch (error) {
-        console.error("Ошибка при получении вопросов:", error);
+        console.error("Ошибка сервера при получении вопросов:", error);
         return [];
     }
 }
