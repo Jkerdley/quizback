@@ -47,7 +47,6 @@ app.delete("/:id", async (req, res) => {
 });
 
 app.put("/:id", async (req, res) => {
-    console.log(req);
     try {
         await updateQuestions(req.params.id, req.body.title, req.body.answers);
         res.json({ success: true });
