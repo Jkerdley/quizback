@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const cors = require("cors");
 const {
     addQuestion,
@@ -10,7 +11,7 @@ const chalk = require("chalk");
 const path = require("path");
 const mongoose = require("mongoose");
 
-const PORT = 3005; // Порт сервера
+const PORT = 3005;
 
 const app = express();
 
@@ -65,13 +66,9 @@ app.put("/:id", async (req, res) => {
     }
 });
 
-// Подключаемся к MongoDB через mongoose
-mongoose
-    .connect(
-        "mongodb+srv://jkerdley:3666131992iqaq@nodecluster.n0j5a.mongodb.net/quiz?retryWrites=true&w=majority&appName=NODECluster"
-    )
-    .then(() => {
-        app.listen(PORT, () => {
-            console.log(chalk.blue(`Server has been started on port ${PORT}...`));
-        });
+// Подключаемся к MongoDB через mongoose + добавил сокрытие пароля и логина через .env
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING).then(() => {
+    app.listen(PORT, () => {
+        console.log(chalk.blue(`Server has been started on port ${PORT}...`));
     });
+});
