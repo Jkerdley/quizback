@@ -69,6 +69,6 @@ app.put("/:id", async (req, res) => {
 // Подключаемся к MongoDB через mongoose + добавил сокрытие пароля и логина через .env
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING).then(() => {
     app.listen(PORT, () => {
-        console.log(chalk.blue(`Server has been started on port ${PORT}...`));
+        console.log(chalk.blueBright(`Server has been started on port ${PORT}...`));
     });
 });
